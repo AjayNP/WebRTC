@@ -4,21 +4,19 @@
 <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
    
    <input id="txt-roomid" placeholder="Unique Room ID">
-   <button id="btn-open-or-join-room" style="margin-bottom:20px;">
+   <button id="btn-open-or-join-room">
    Open or join Room
    </button
    
    
-   <hr >
-   <div style="overflow: hidden">
-   
-   <div id="local-videos-container" style="width:300px; height:200px; background: #000; float: left">
+   <hr>
+   <div id="local-videos-container">
    
    </div>
    
-   <div id="remote-videos-container" style="width:300px; height:200px; background: #000; float: left; margin-left: 50px; border-left: 1px solid #ccc">
+   <hr/>
+   <div id="remote-videos-container">
    
-   </div>
    </div>
    <script>
    var connection = new RTCMultiConnection();
